@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div  style="background-color:#fafafa!important;">
+    <home-hero/>
+    <home-about/>
+    <home-info/>
+    <home-contact/>
+    <div class="row-c p-1 f-light" style="background: #5F8BA5;">
+      &copy; {{ rightsYear }} {{ copyright }}
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import HomeHero from "@/views/Home/homeHero";
+import HomeAbout from "@/views/Home/homeAbout";
+import HomeContact from "@/views/Home/homeContact";
+import HomeInfo from "@/views/Home/homeInfo";
+import mainInfo from '../../public/json/main.json'
+const copyright = mainInfo.copyrights
+const rightsYear = new Date().getFullYear();
 </script>
+
+<style scoped>
+
+</style>

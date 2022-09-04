@@ -1,30 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <app-nav/>
+    <router-view/>
+  </div>
 </template>
 
+<script setup>
+import AppNav from "@/components/appNav";
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import "fib-maxup/css/index.css";
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-nav {
-  padding: 30px;
+:root{
 
-  a {
+  --primaryColor: #244868;
+
+  background-color: #E7ECF8;
+
+  font-family: 'Open Sans', sans-serif;
+  .openSans{font-family: 'Open Sans', sans-serif!important;}
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Istok Web', sans-serif;
     font-weight: bold;
-    color: #2c3e50;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  @media screen and (max-width: 500px){
+    font-size: 10px;
   }
 }
+.primaryColor{color: var(--primaryColor);}
+.primaryBgColor{background-color: var(--primaryColor);}
 </style>

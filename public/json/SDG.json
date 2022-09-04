@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "label": "No Poverty",
+    "color": "#E74C3C",
+    "icons": {
+      "min": "SDG-logo-01.svg",
+      "colored": "SDG-logo-colored-01.svg",
+      "labeled": "SDG-logo-labeled-01.svg"
+    }
+  },
+  {
+    "id": 2,
+    "label": "Zero Hunger",
+    "color": "#E67E22",
+    "icons": {
+      "min": "SDG-logo-02.svg",
+      "colored": "SDG-logo-colored-02.svg",
+      "labeled": "SDG-logo-labeled-02.svg"
+    }
+  },
+  {
+    "id": 3,
+    "label": "Good Health And Well-Being",
+    "color": "#2ECC71",
+    "icons": {
+      "min": "SDG-logo-03.svg",
+      "colored": "SDG-logo-colored-03.svg",
+      "labeled": "SDG-logo-labeled-03.svg"
+    }
+  },
+  {
+    "id": 4,
+    "label": "Quality Education",
+    "color": "#C0392B",
+    "icons": {
+      "min": "SDG-logo-04.svg",
+      "colored": "SDG-logo-colored-04.svg",
+      "labeled": "SDG-logo-labeled-04.svg"
+    }
+  },
+  {
+    "id": 5,
+    "label": "Gender Equality",
+    "color": "#DD4F3B",
+    "icons": {
+      "min": "SDG-logo-05.svg",
+      "colored": "SDG-logo-colored-05.svg",
+      "labeled": "SDG-logo-labeled-05.svg"
+    }
+  },
+  {
+    "id": 6,
+    "label": "Clean Water And Sanitation",
+    "color": "#5BBDE2",
+    "icons": {
+      "min": "SDG-logo-06.svg",
+      "colored": "SDG-logo-colored-06.svg",
+      "labeled": "SDG-logo-labeled-06.svg"
+    }
+  },
+  {
+    "id": 7,
+    "label": "Affordable And Clean Energy",
+    "color": "#F1C40F",
+    "icons": {
+      "min": "SDG-logo-07.svg",
+      "colored": "SDG-logo-colored-07.svg",
+      "labeled": "SDG-logo-labeled-07.svg"
+    }
+  },
+  {
+    "id": 8,
+    "label": "Decent Work And Incoming Growth",
+    "color": "#8E44AD",
+    "icons": {
+      "min": "SDG-logo-08.svg",
+      "colored": "SDG-logo-colored-08.svg",
+      "labeled": "SDG-logo-labeled-08.svg"
+    }
+  },
+  {
+    "id": 9,
+    "label": "Industry, Innovation And Infrastructure",
+    "color": "#E27240",
+    "icons": {
+      "min": "SDG-logo-09.svg",
+      "colored": "SDG-logo-colored-09.svg",
+      "labeled": "SDG-logo-labeled-09.svg"
+    }
+  },
+  {
+    "id": 10,
+    "label": "Reduced Inequalities",
+    "color": "#CF3482",
+    "icons": {
+      "min": "SDG-logo-10.svg",
+      "colored": "SDG-logo-colored-10.svg",
+      "labeled": "SDG-logo-labeled-10.svg"
+    }
+  },
+  {
+    "id": 11,
+    "label": "Sustainable Cities And Communities",
+    "color": "#EBA045",
+    "icons": {
+      "min": "SDG-logo-11.svg",
+      "colored": "SDG-logo-colored-11.svg",
+      "labeled": "SDG-logo-labeled-11.svg"
+    }
+  },
+  {
+    "id": 12,
+    "label": "Responsible Consumption And Production",
+    "color": "#B88F40",
+    "icons": {
+      "min": "SDG-logo-12.svg",
+      "colored": "SDG-logo-colored-12.svg",
+      "labeled": "SDG-logo-labeled-12.svg"
+    }
+  },
+  {
+    "id": 13,
+    "label": "Climate Action",
+    "color": "#4F7D4C",
+    "icons": {
+      "min": "SDG-logo-13.svg",
+      "colored": "SDG-logo-colored-13.svg",
+      "labeled": "SDG-logo-labeled-13.svg"
+    }
+  },
+  {
+    "id": 14,
+    "label": "Life Below Water",
+    "color": "#4796CF",
+    "icons": {
+      "min": "SDG-logo-14.svg",
+      "colored": "SDG-logo-colored-14.svg",
+      "labeled": "SDG-logo-labeled-14.svg"
+    }
+  },
+  {
+    "id": 15,
+    "label": "Life And Land",
+    "color": "#71B757",
+    "icons": {
+      "min": "SDG-logo-15.svg",
+      "colored": "SDG-logo-colored-15.svg",
+      "labeled": "SDG-logo-labeled-15.svg"
+    }
+  },
+  {
+    "id": 16,
+    "label": "Peace, Justice And Strong Institutions",
+    "color": "#31699A",
+    "icons": {
+      "min": "SDG-logo-16.svg",
+      "colored": "SDG-logo-colored-16.svg",
+      "labeled": "SDG-logo-labeled-16.svg"
+    }
+  },
+  {
+    "id": 17,
+    "label": "Partnerships For The Goals",
+    "color": "#244868",
+    "icons": {
+      "min": "SDG-logo-17.svg",
+      "colored": "SDG-logo-colored-17.svg",
+      "labeled": "SDG-logo-labeled-17.svg"
+    }
+  }
+]
