@@ -1,18 +1,18 @@
 <template>
+  <app-loading/>
   <div>
-    <app-nav/>
+    <app-nav class="p-sticky t-0 z-9"/>
     <router-view/>
   </div>
 </template>
 
 <script setup>
 import AppNav from "@/components/appNav";
+import AppLoading from "@/components/appLoading";
 </script>
 
 <style lang="scss">
 @import "fib-maxup/css/index.css";
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root{
 
@@ -33,4 +33,42 @@ import AppNav from "@/components/appNav";
 }
 .primaryColor{color: var(--primaryColor);}
 .primaryBgColor{background-color: var(--primaryColor);}
+.pcon{
+  padding-inline: 3rem;
+}
+.contr{
+  width: 75%;
+}
+aside .activeLink * {
+  color: var(--primaryColor)!important;
+  fill: var(--primaryColor)!important;
+}
+.fade {
+  &-slide {
+    &-enter-from, &-leave-to {
+      opacity: 0;
+      translate: -20%;
+    }
+
+    &-enter-to, &-leave-from {
+      opacity: 1
+    }
+
+    &-enter-active, &-leave-active {
+      transition: 0.5s ease-in-out
+    }
+  }
+
+  &-enter-from, &-leave-to {
+    opacity: 0;
+  }
+
+  &-enter-to, &-leave-from {
+    opacity: 1
+  }
+
+  &-enter-active, &-leave-active {
+    transition: 0.5s ease-in-out
+  }
+}
 </style>

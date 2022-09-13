@@ -11,7 +11,9 @@
 
 <style scoped lang="scss">
 aside{
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
   box-shadow: 0 0 16px #00000010;
   border-radius: 30px;
 }

@@ -1,33 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
-import GlobalView from '@/views/GlobalView.vue'
-import RegionalView from "@/views/RegionalView.vue";
+import routes from "@/router/routes";
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/global',
-    name: 'global',
-    component: GlobalView
-  },
-  {
-    path: '/regional',
-    name: 'regional',
-    component: RegionalView
-  },
-]
+
+const pageTransition = (to, from, next) => {
+  const pageTransition = document.getElementsByClassName('pageTransition')[0]
+  pageTransition.classList.add('activate')
+  setTimeout(()=> next(),3300)
+  setTimeout(()=> pageTransition.classList.remove('activate'),4010)
+  // next()
+}
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   linkExactActiveClass: 'activeLink',
   routes
 })
-router.beforeEach((to, from, next) => {
-  console.log('horaaaaa')
-  next()
-})
+
+router.beforeEach(pageTransition)
+
 export default router

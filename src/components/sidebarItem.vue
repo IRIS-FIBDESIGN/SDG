@@ -1,7 +1,8 @@
 <template>
 <li>
   <div class="sidebarItem row alignCenter" :class="{'borderless roundB':borderless, 'roundT': roundT}">
-    <ion-icon :name="icon" class="icon mr-1"></ion-icon>
+    <img v-if="customIcon"  class="icon mr-1" :src="require('@/assets/'+icon)" alt="icon">
+    <ion-icon v-else :name="icon" class="icon mr-1"></ion-icon>
     <p>{{label}}</p>
     <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
   </div>
@@ -15,7 +16,8 @@ export default {
     label: String,
     borderless: Boolean,
     roundT: Boolean,
-    icon: String
+    icon: String,
+    customIcon: Boolean,
   }
 }
 </script>
@@ -39,6 +41,7 @@ export default {
     width: fit-content!important;
   }
   p,.icon{
+    transition: 0.2s ease-in-out;
     color: #8d8d8d;
     fill: #8d8d8d;
   }
@@ -47,8 +50,8 @@ export default {
     //color: var(--primaryColor);
 
     p,.icon{
-      color: black;
-      fill: black;
+      color: var(--primaryColor);
+      fill: var(--primaryColor);
     }
   }
 }

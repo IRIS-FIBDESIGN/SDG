@@ -1,0 +1,885 @@
+{
+  "title": "Regional Scale",
+  "africa": {
+    "title": "Africa",
+    "low": {
+      "title": "Low-Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    },
+    "upperMid": {
+      "title": "Upper-Middle Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    },
+    "lowerMid": {
+      "title": "Lower-Middle Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "10"
+          },
+          {
+            "id": 12,
+            "percentage": "20"
+          },
+          {
+            "id": 5,
+            "percentage": "30"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    }
+  },
+  "asia": {
+    "title": "Europe and Centeral Asia",
+    "low": {
+      "title": "Low-Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    },
+    "upperMid": {
+      "title": "Upper-Middle Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    },
+    "lowerMid": {
+      "title": "Lower-Middle Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    }
+  },
+  "america": {
+    "title": "Latin America and Caribbean",
+    "low": {
+      "title": "Low-Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    },
+    "upperMid": {
+      "title": "Upper-Middle Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    },
+    "lowerMid": {
+      "title": "Lower-Middle Income",
+      "topGoals": {
+        "title": "Top Synergetic Goals",
+        "goals": [
+          {
+            "id": 3,
+            "percentage": "35.86"
+          },
+          {
+            "id": 12,
+            "percentage": "28.11"
+          },
+          {
+            "id": 5,
+            "percentage": "7.12"
+          }
+        ]
+      },
+      "allGoals": [
+        {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+        {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+        {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+        {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+      ],
+      "interaction": [
+        {
+          "label": "SDG-15",
+          "icon": "SDG-logo-15.svg",
+          "percentage": "35.86",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-03",
+          "icon": "SDG-logo-03.svg",
+          "percentage": "25",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-01",
+          "icon": "SDG-logo-01.svg",
+          "percentage": "12",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-08",
+          "icon": "SDG-logo-08.svg",
+          "percentage": "7",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        },
+        {
+          "label": "SDG-12",
+          "icon": "SDG-logo-12.svg",
+          "percentage": "0.17",
+          "color": "#E74C3C"
+        }
+      ],
+      "methodology": "<p>lorem ipsum methodology</p>",
+      "data": "<p>lorem ipsum data</p>"
+    }
+  }
+}

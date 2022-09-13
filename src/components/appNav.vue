@@ -1,35 +1,36 @@
 <template>
-  <transition name="nav" appear>
-    <transition-group tag="nav" name="nav-brand" class="navigation bg-white fixed">
-      <router-link to="/" class="brand" v-if="!isHome">
-        <div>
-          <p>Sustainable Development Goals</p>
-          <p>Prioritisation Dashboard</p>
-        </div>
-      </router-link>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/global">Global</router-link></li>
-        <li><router-link to="/regional">Regional</router-link></li>
-        <li><router-link to="/country">Country</router-link></li>
-      </ul>
+  <div>
+    <transition name="nav" appear>
+      <transition-group tag="nav" name="nav-brand" class="navigation bg-white">
+        <router-link to="/" class="brand" v-if="!isHome">
+          <div>
+            <p>{{ title }}</p>
+            <p>{{ subtitle }}</p>
+          </div>
+        </router-link>
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/global">Global</router-link></li>
+          <li><router-link to="/regional">Regional</router-link></li>
+          <li><router-link to="/country">Country</router-link></li>
+        </ul>
 
-      <ul class="ml-auto">
-        <li><a href="#" class="imageLink"><img src="@/assets/un-logo.png" alt="logo"></a></li>
-        <li><a href="#" class="imageLink"><img src="@/assets/lab-logo.png" alt="logo"></a></li>
-      </ul>
-    </transition-group>
-  </transition>
+        <ul class="ml-auto">
+          <li><a href="#" class="imageLink"><img src="@/assets/un-logo.png" alt="logo"></a></li>
+          <li><a href="#" class="imageLink"><img src="@/assets/lab-logo.png" alt="logo"></a></li>
+        </ul>
+      </transition-group>
+    </transition>
+  </div>
 </template>
 
-<script>
-export default {
-  computed: {
-    isHome() {
-      return this.$route.name === 'home';
-    }
-  }
-}
+<script setup>
+import mainInfo from '../../public/json/main.json'
+import {computed, inject} from "vue";
+import {useRoute} from "vue-router/dist/vue-router";
+const {title, subtitle} = mainInfo
+const isMobile = inject('isMobile')
+const isHome = computed(() => useRoute().name === 'home')
 </script>
 
 <style scoped lang="scss">

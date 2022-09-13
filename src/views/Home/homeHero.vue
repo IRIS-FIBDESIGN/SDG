@@ -18,9 +18,11 @@
 </template>
 
 <script setup>
+import mainInfo from "../../../public/json/main.json"
 import homeInfo from "../../../public/json/home.json"
 import HeroBtn from "@/views/Home/heroBtn";
-const {title, subtitle,description} = homeInfo.hero
+const {description} = homeInfo.hero
+const {title, subtitle} = mainInfo
 </script>
 
 <style scoped>

@@ -1,40 +1,28 @@
 {
   "title": "Global Scale",
-  "topGoals": {
-    "title": "Top Synergetic Goals",
-    "goals": [
-      {
-        "id": 3,
-        "percentage": "35.86"
-      },
-      {
-        "id": 12,
-        "percentage": "28.11"
-      },
-      {
-        "id": 5,
-        "percentage": "7.12"
-      }
-    ]
-  },
+  "topGoals": [
+    {"id": 3,"percentage": "35.86"},
+    {"id": 12,"percentage": "28.11"},
+    {"id": 5,"percentage": "7.12"}
+  ],
   "allGoals": [
-    {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
-    {"id": 2,"icon": "icon","title": "title","percentage": 33  },
-    {"id": 3,"icon": "icon","title": "title","percentage": 16  },
-    {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
-    {"id": 5,"icon": "icon","title": "title","percentage": 33  },
-    {"id": 6,"icon": "icon","title": "title","percentage": 16  },
-    {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
-    {"id": 8,"icon": "icon","title": "title","percentage": 33  },
-    {"id": 9,"icon": "icon","title": "title","percentage": 16  },
-    {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
-    {"id": 11,"icon": "icon","title": "title","percentage": 33  },
-    {"id": 12,"icon": "icon","title": "title","percentage": 16  },
-    {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
-    {"id": 14,"icon": "icon","title": "title","percentage": 33  },
-    {"id": 15,"icon": "icon","title": "title","percentage": 16  },
-    {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
-    {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+    {"id": 1,"percentage": 28.5},
+    {"id": 2,"percentage": 33  },
+    {"id": 3,"percentage": 16  },
+    {"id": 4,"percentage": 28.5},
+    {"id": 5,"percentage": 33  },
+    {"id": 6,"percentage": 16  },
+    {"id": 7,"percentage": 28.5},
+    {"id": 8,"percentage": 33  },
+    {"id": 9,"percentage": 16  },
+    {"id": 10,"percentage": 28.5},
+    {"id": 11,"percentage": 33  },
+    {"id": 12,"percentage": 16  },
+    {"id": 13,"percentage": 28.5},
+    {"id": 14,"percentage": 33  },
+    {"id": 15,"percentage": 16  },
+    {"id": 16,"percentage": 28.5},
+    {"id": 17,"percentage": 33  }
   ],
   "interaction": [
     {
@@ -77,6 +65,54 @@
       "label": "SDG-08",
       "icon": "SDG-logo-08.svg",
       "percentage": "7",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
+      "color": "#E74C3C"
+    },
+    {
+      "label": "SDG-12",
+      "icon": "SDG-logo-12.svg",
+      "percentage": "0.17",
       "color": "#E74C3C"
     },
     {

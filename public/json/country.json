@@ -1,0 +1,556 @@
+{
+  "title": "Country Scale",
+  "availableCountries": [
+    "Finland",
+    "Swed",
+    "the other one"
+  ],
+  "allGoals": [
+    {"id": 1,"icon": "icon","title": "title","percentage": 28.5},
+    {"id": 2,"icon": "icon","title": "title","percentage": 33  },
+    {"id": 3,"icon": "icon","title": "title","percentage": 16  },
+    {"id": 4,"icon": "icon","title": "title","percentage": 28.5},
+    {"id": 5,"icon": "icon","title": "title","percentage": 33  },
+    {"id": 6,"icon": "icon","title": "title","percentage": 16  },
+    {"id": 7,"icon": "icon","title": "title","percentage": 28.5},
+    {"id": 8,"icon": "icon","title": "title","percentage": 33  },
+    {"id": 9,"icon": "icon","title": "title","percentage": 16  },
+    {"id": 10,"icon": "icon","title": "title","percentage": 28.5},
+    {"id": 11,"icon": "icon","title": "title","percentage": 33  },
+    {"id": 12,"icon": "icon","title": "title","percentage": 16  },
+    {"id": 13,"icon": "icon","title": "title","percentage": 28.5},
+    {"id": 14,"icon": "icon","title": "title","percentage": 33  },
+    {"id": 15,"icon": "icon","title": "title","percentage": 16  },
+    {"id": 16,"icon": "icon","title": "title","percentage": 28.5},
+    {"id": 17,"icon": "icon","title": "title","percentage": 33  }
+  ],
+  "targets": {
+    "title": "targets",
+    "value": [
+      {
+        "sdgId": 1,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": {
+            "label": "High Performer",
+            "value": "<p>some data</p><p>some another data</p>"
+          },
+          "lowPerformer":{
+            "label": "Low Performer",
+            "value": "<p>some data</p>"
+          },
+          "similar": {
+            "label": "Similar",
+            "value": "<p>some data</p>"
+          }
+        }
+      },
+      {
+        "sdgId": 2,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 3,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 4,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 5,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 6,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 7,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 8,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 9,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 10,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 11,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 12,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 13,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 14,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 15,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 16,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      },
+      {
+        "sdgId": 17,
+        "data": [
+          {"from":"SDG","to":"one","weight": 15},
+          {"from":"SDG","to":"two","weight": 5},
+          {"from":"SDG","to":"three","weight": 5},
+
+          {"from":"one","to":"highPerformer","weight": 5},
+          {"from":"one","to":"lowPerformer","weight": 7},
+          {"from":"one","to":"similar","weight": 3},
+
+          {"from":"two","to":"highPerformer","weight": 1},
+          {"from":"two","to":"lowPerformer","weight": 4},
+
+          {"from":"three","to":"highPerformer","weight": 3},
+          {"from":"three","to":"lowPerformer","weight": 1},
+          {"from":"three","to":"similar","weight": 1}
+        ],
+        "nodes": [
+          {"id":"one","name":"one", "color":"#3F3F42"},
+          {"id":"two","name":"two", "color":"#3F3F42"},
+          {"id":"three","name":"three", "color":"#3F3F42"}
+        ],
+        "info": {
+          "highPerformer": "<p>some data</p><p>some another data</p>",
+          "lowPerformer":"<p>some data</p>",
+          "similar": "<p>some data</p>"
+        }
+      }
+    ]
+  },
+  "targetSuffix": "%",
+  "indicators": [
+    {"sdgId": 1,"value": {"similar": 10, "highPerf": 2, "lowPerf": 3, "other": 2}},
+    {"sdgId": 2,"value": {"similar": 7, "highPerf": 5, "lowPerf": 5, "other": 0}},
+    {"sdgId": 3,"value": {"similar": 3, "highPerf": 2, "lowPerf": 10, "other": 2}},
+    {"sdgId": 4,"value": {"similar": 7, "highPerf": 7, "lowPerf": 1, "other": 4}},
+    {"sdgId": 5,"value": {"similar": 1, "highPerf": 2, "lowPerf": 3, "other": 11}},
+    {"sdgId": 6,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 7,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 8,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 9,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 10,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 11,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 12,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 13,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 14,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 15,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 16,"value": {"similar": 5, "highPerf": 6, "lowPerf": 3, "other": 3}},
+    {"sdgId": 17,"value": {"similar": 3, "highPerf": 8, "lowPerf": 3, "other": 3}}
+  ],
+  "methodology": "<p>methodology</p>",
+  "data": "<p>data</p>"
+}

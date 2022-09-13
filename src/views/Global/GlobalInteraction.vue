@@ -1,20 +1,35 @@
 <template>
-<div class="pl-5 pt-3">
-  <div v-for="(goal,index) in interaction" :key="index" class="row alignCenter mb-1 line" :class="'chart-'+(index+1)">
-    <p>{{ goal.label }}</p>
-    <div class="row alignCenter space chart ml-1" :style="'background-color:'+goal.color+';width:calc('+((goal.percentage * 80)/interaction[0].percentage)+'% + 50px) '">
-      <img :src="require('@/assets/SDG-logos/'+goal.icon)" alt="">
+  <div class="row">
+    <div class="xcol-info">
+      <global-sidebar/>
     </div>
-    <p class="percentage"  :style="'color:'+goal.color">
-      <count-up :end-val="goal.percentage" :options="{suffix:'%',decimalPlaces:  Number.isInteger(goal.percentage) ? 0 : 2}" :duration="3" :delay="2"></count-up>
-    </p>
+    <div class="xcol-body">
+      <div class="pl-5 pt-3">
+        <div v-for="(goal,index) in interaction" :key="index" class="row alignCenter mb-1 line" :class="'chart-'+(index+1)">
+          <p>{{ goal.label }}</p>
+          <interaction-chart :interaction="interaction[0].percentage" :goal="goal"/>
+          <p class="percentage"  :style="'color:'+goal.color">
+            <count-up :end-val="goal.percentage" :options="{suffix:'%',decimalPlaces:  Number.isInteger(goal.percentage) ? 0 : 2}" :duration="3" :delay="2"></count-up>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
+  <!-- ============== 3d earth ============== -->
+  <div class="row-c">
+    <div class="xx goRight">
+      <globe-map style="z-index: -1;"/>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import CountUp from 'vue-countup-v3'
 import globalInfo from '../../../public/json/global.json'
+import InteractionChart from "@/views/Regional/interactionChart";
+import GlobalSidebar from "@/views/Global/globalSidebar";
+import GlobeMap from "@/components/GlobeMap";
 
 const {interaction} = globalInfo
 </script>
@@ -32,5 +47,42 @@ const {interaction} = globalInfo
 img{
   width: 20px;
   height: 20px;
+}
+
+
+.xx {
+  width: 600px;
+  height: 600px;
+  margin-top: 50px;
+  position: fixed;
+  top: 5%;
+  right: 35%;
+  transform: translateX(50%);
+  z-index: -10;
+  transition: 0.5s ease;
+
+  &.goRight {
+    right: 0 !important;
+    opacity: 0.2;
+  }
+
+  &:before {
+    position: absolute;
+    inset: -5%;
+    background-color: #fff;
+    content: '';
+    z-index: -10;
+    border-radius: 50%;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: -10;
+    border-radius: 50%;
+    inset: -20%;
+    border: 2rem solid #fff;
+
+  }
 }
 </style>
