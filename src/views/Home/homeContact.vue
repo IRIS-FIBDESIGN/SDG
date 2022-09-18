@@ -5,8 +5,8 @@
       <h4 class="primaryColor">{{title}}</h4>
       <p class="f-justify f-secondary">{{description}}</p>
       <div class="row mt-3">
-        <div class="xcol-2-2 row-c"><img src="@/assets/un-logo-big.png" alt=""></div>
-        <div class="xcol-2-2 row-c"><img src="@/assets/lab-logo-big.png" alt=""></div>
+        <div class="xcol-2-2 row-c"><a :href="universityLink"><img src="@/assets/un-logo-big.png" alt=""></a></div>
+        <div class="xcol-2-2 row-c"><a :href="labLink"><img src="@/assets/lab-logo-big.png" alt=""></a></div>
       </div>
     </div>
     <div class="xcol-2-2 rm-padding">
@@ -18,7 +18,9 @@
 
 <script setup>
 import homeInfo from '../../../public/json/home.json'
+import mainInfo from '../../../public/json/main.json'
 const {title, description} = homeInfo.contact
+const {universityLink, labLink} = mainInfo
 </script>
 
 <style scoped lang="scss">

@@ -1,6 +1,6 @@
 <template>
   <transition name="fade-slide" mode="out-in" appear>
-    <app-sidebar>
+    <app-sidebar class="side">
       <router-link to="/country/all-goals" class="w-100">
         <sidebar-item label="Goals" icon="apps" rountT/>
       </router-link>
@@ -27,4 +27,9 @@ import SidebarItem from "@/components/sidebarItem";
 </script>
 
 <style scoped lang="scss">
+@media screen and (max-width: 500px){
+  .side{
+    margin-top: 9rem;
+  }
+}
 </style>

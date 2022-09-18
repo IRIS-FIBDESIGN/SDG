@@ -1,11 +1,11 @@
 <template>
 
   <div class="row rm-padding">
-    <div class="xcol-info">
+    <div class="xcol-info" v-if="menuStore.isOpen">
       <country-sidebar class="p-sticky"/>
     </div>
     <div class="xcol-body">
-      <div class="p-3-5">
+      <div class="bounder">
         <sankey-chart :data-props="target" class="chart"/>
 
         <div class="boxInfo">
@@ -37,12 +37,15 @@ import SankeyChart from "@/views/Country/sankeyChart";
 import countryInfo from '../../../public/json/country.json'
 import {useRoute} from "vue-router";
 import CountrySidebar from "@/views/Country/countrySidebar";
+import {useMenuStore} from "@/store/menuStore";
 
 const sdgParam = useRoute().params.sdgId
 const sdgId = parseInt(sdgParam)
 const target = countryInfo.targets.value.find(t => t.sdgId === sdgId)
 
 const {highPerformer,  lowPerformer,  similar} = target.info
+
+const menuStore = useMenuStore()
 </script>
 
 <style scoped lang="scss">
@@ -67,7 +70,11 @@ const {highPerformer,  lowPerformer,  similar} = target.info
     margin-bottom: 2rem;
   }
 }
-
+@media screen and (min-width: 500px){
+  .bounder{
+    padding: 2rem 3rem;
+  }
+}
 .p-sticky{
   top: 90px;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="xcol-info">
+    <div class="xcol-info" v-if="store.isOpen">
       <global-sidebar/>
     </div>
     <div class="xcol-body">
@@ -38,8 +38,10 @@ import GlobalMethodology from "@/views/Global/GlobalMethodology.vue"
 import GlobalData from "@/views/Global/GlobalData.vue"
 import GlobeMap from "@/components/GlobeMap";
 import GlobalSidebar from "@/views/Global/globalSidebar";
+import {useMenuStore} from "@/store/menuStore";
 
 const {allGoals} = globalScale
+const store = useMenuStore()
 </script>
 
 
@@ -93,4 +95,5 @@ circle{
 
   }
 }
+
 </style>

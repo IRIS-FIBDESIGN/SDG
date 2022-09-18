@@ -15,10 +15,16 @@ import SDGs from '../../../public/json/SDG.json'
 
 const props = defineProps({
   percentage: Number,
-  color: Number
+  color: Number,
+  customColor: String
 })
-const {percentage,color} = toRefs(props);
-const colorVal = SDGs.find(x => x.id === color.value).color;
+const {percentage,color,customColor} = toRefs(props);
+let colorVal;
+if(color.value){
+  colorVal = SDGs.find(x => x.id === color.value).color;
+}else{
+  colorVal = customColor.value;
+}
 const percss = 450 - (450 * (percentage.value / 100))
 const circle = {
   cyx: 80,

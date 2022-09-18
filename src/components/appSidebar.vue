@@ -1,16 +1,16 @@
 <template>
-<aside class="bg-white">
-  <ul class="rm-padding">
-    <slot />
-  </ul>
-</aside>
+  <aside class="bg-white">
+    <ul class="rm-padding">
+      <slot/>
+    </ul>
+  </aside>
 </template>
 
 <script setup>
 </script>
 
 <style scoped lang="scss">
-aside{
+aside {
   width: 100%;
   max-width: 300px;
   min-width: 200px;

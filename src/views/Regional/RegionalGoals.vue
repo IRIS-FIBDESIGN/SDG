@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="xcol-info">
+    <div class="xcol-info" v-if="menuStore.isOpen">
       <regional-sidebar :region-title="regionTitle" :income="income" :region="region" :map="map"/>
     </div>
     <div class="xcol-body">
@@ -28,6 +28,7 @@ import {useRoute} from "vue-router/dist/vue-router";
 import SDGs from "../../../public/json/SDG.json";
 import {useGlobalStore} from "@/store/globalStore";
 import RegionalSidebar from "@/views/Regional/regionalSidebar";
+import {useMenuStore} from "@/store/menuStore";
 
 const route = useRoute()
 const region = ref('')
@@ -36,7 +37,7 @@ const allGoals = ref(null)
 const regionTitle = ref('')
 const map = ref('regional-map-asia.png')
 const store = useGlobalStore()
-
+const menuStore = useMenuStore()
 onMounted(() => {
   region.value = route.params.region
   income.value = route.params.income

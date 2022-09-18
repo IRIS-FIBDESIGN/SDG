@@ -16,8 +16,8 @@
         </ul>
 
         <ul class="ml-auto">
-          <li><a href="#" class="imageLink"><img src="@/assets/un-logo.png" alt="logo"></a></li>
-          <li><a href="#" class="imageLink"><img src="@/assets/lab-logo.png" alt="logo"></a></li>
+          <li><a :href="universityLink" class="imageLink"><img src="@/assets/un-logo.png" alt="logo"></a></li>
+          <li><a :href="labLink" class="imageLink"><img src="@/assets/lab-logo.png" alt="logo"></a></li>
         </ul>
       </transition-group>
     </transition>
@@ -28,7 +28,7 @@
 import mainInfo from '../../public/json/main.json'
 import {computed, inject} from "vue";
 import {useRoute} from "vue-router/dist/vue-router";
-const {title, subtitle} = mainInfo
+const {title, subtitle, universityLink, labLink} = mainInfo
 const isMobile = inject('isMobile')
 const isHome = computed(() => useRoute().name === 'home')
 </script>

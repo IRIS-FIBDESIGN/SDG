@@ -54,5 +54,9 @@ export default {
       fill: var(--primaryColor);
     }
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 1.5rem 25px;
+  }
 }
 </style>

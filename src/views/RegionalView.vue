@@ -4,10 +4,11 @@
                      :number="sub_saharan_africa.num"
                      :title="sub_saharan_africa.label"
                      :color="sub_saharan_africa.color">
-    <div v-for="item in sub_saharan_africa.value.topGoals.value"
+    <div v-for="item in sub_saharan_africa.links"
          :key="item.id"
          class="row alignCenter"
-         @click="showTopGoals(sub_saharan_africa.id, item.id)">
+         @click="!item.disabled && showTopGoals(sub_saharan_africa.id, item.id)"
+         :class="{'disabledLink':item.disabled}">
       <p>{{ item.label }}</p>
       <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
     </div>
@@ -17,10 +18,11 @@
                      :number="europe_and_central_asia.num"
                      :title="europe_and_central_asia.label"
                      :color="europe_and_central_asia.color">
-    <div v-for="item in europe_and_central_asia.value.topGoals.value"
+    <div v-for="item in europe_and_central_asia.links"
          :key="item.id"
          class="row alignCenter"
-         @click="showTopGoals(europe_and_central_asia.id, item.id)">
+         @click="!item.disabled && showTopGoals(europe_and_central_asia.id, item.id)"
+         :class="{'disabledLink':item.disabled}">
       <p>{{ item.label }}</p>
       <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
     </div>
@@ -30,10 +32,11 @@
                      :number="latin_america_and_the_caribbean.num"
                      :title="latin_america_and_the_caribbean.label"
                      :color="latin_america_and_the_caribbean.color">
-    <div v-for="item in latin_america_and_the_caribbean.value.topGoals.value"
+    <div v-for="item in latin_america_and_the_caribbean.links"
          :key="item.id"
          class="row alignCenter"
-         @click="showTopGoals(latin_america_and_the_caribbean.id, item.id)">
+         @click="!item.disabled && showTopGoals(latin_america_and_the_caribbean.id, item.id)"
+         :class="{'disabledLink':item.disabled}">
       <p>{{ item.label }}</p>
       <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
     </div>
@@ -1918,7 +1921,7 @@ import {ref, onMounted} from "vue";
 import RegionalInfoBox from "@/views/Regional/RegionalInfoBox";
 import AppSidebar from "@/components/appSidebar";
 import SidebarItem from "@/components/sidebarItem";
-import regionalInformation from "../../public/json/regional2.json";
+import regionalInformation from "../../public/json/regional.json";
 import {useGlobalStore} from "@/store/globalStore";
 
 const regionSelected = ref(false)
@@ -1953,8 +1956,6 @@ onMounted(() => {
   const asiaPos = document.getElementById('asia')
   const americaPos = document.getElementById('america')
 
-  const bodyRect = document.body.getBoundingClientRect()
-
   const africaInfoBox = document.getElementsByClassName('africaInfoBox')[0]
   const asiaInfoBox = document.getElementsByClassName('asiaInfoBox')[0]
   const americaInfoBox = document.getElementsByClassName('americaInfoBox')[0]
@@ -1981,6 +1982,7 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+
 path {
   transition: all 0.2s ease;
 }
@@ -2025,7 +2027,7 @@ path {
 }
 
 .incomeSection {
-  div {
+  div:not(.disabledLink) {
     cursor: pointer;
     min-width: 220px;
     color: #00000090;
@@ -2035,6 +2037,10 @@ path {
       color: black;
     }
   }
+}
+.disabledLink{
+  opacity: 0.2;
+  cursor: default!important;
 }
 
 

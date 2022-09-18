@@ -1,10 +1,10 @@
 <template>
   <div class="row rm-padding">
-    <div class="xcol-info">
+    <div class="xcol-info"  v-if="menuStore.isOpen">
       <country-sidebar class="p-sticky"/>
     </div>
     <div class="xcol-body">
-      <div class="row p-3-5">
+      <div class="row bounder">
         <div v-for="(target,index) in targets" :key="index" class="xcol-2">
           <router-link :to="`/country/targets/${target.sdgId}`" class="w-100">
             <sankey-chart :data-props="target"/>
@@ -20,8 +20,10 @@
 import SankeyChart from "@/views/Country/sankeyChart";
 import countryInfo from '../../../public/json/country.json'
 import CountrySidebar from "@/views/Country/countrySidebar";
+import {useMenuStore} from "@/store/menuStore";
 
 const targets = countryInfo.targets.value
+const menuStore = useMenuStore()
 </script>
 
 <style scoped lang="scss">
@@ -34,5 +36,10 @@ const targets = countryInfo.targets.value
 }
 .p-sticky{
   top: 100px;
+}
+@media screen and (min-width: 500px){
+  .bounder{
+    padding: 2rem 3rem;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="row rm-padding">
-    <div class="xcol-info">
+    <div class="xcol-info" v-if="menuStore.isOpen">
       <country-sidebar class="p-sticky"/>
     </div>
     <div class="xcol-body">
@@ -12,7 +12,9 @@
 <script setup>
 import countryInfo from '../../../public/json/country.json'
 import CountrySidebar from "@/views/Country/countrySidebar";
+import {useMenuStore} from "@/store/menuStore";
 const {data} = countryInfo
+const menuStore = useMenuStore()
 </script>
 
 <style scoped lang="scss">

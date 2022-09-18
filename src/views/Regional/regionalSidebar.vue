@@ -38,12 +38,26 @@ const props = defineProps({
 
 .map{
   width: 100%;
-  z-index: -1;
   height: 200px;
   object-fit: cover;
 }
 
 .p-sticky{
   top: 70px;
+  @media screen and (max-width: 500px) {
+    padding-top: 2rem;
+    *:not(h6){
+      font-size: 2.2rem!important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  h6{
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
 }
 </style>

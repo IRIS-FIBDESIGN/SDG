@@ -1,5 +1,5 @@
 import {defineStore} from 'pinia'
-import regionalInformation from "../../public/json/regional2.json";
+import regionalInformation from "../../public/json/regional.json";
 
 export const useGlobalStore = defineStore('globalStore', {
     actions: {

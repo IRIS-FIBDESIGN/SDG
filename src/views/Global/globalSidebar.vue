@@ -28,5 +28,11 @@ import SidebarItem from "@/components/sidebarItem";
 <style scoped lang="scss">
 .p-sticky{
   top: 100px;
+  @media screen and (max-width: 500px) {
+    margin-top: 10rem;
+    *{
+      font-size: 2.2rem!important;
+    }
+  }
 }
 </style>

@@ -1,4 +1,5 @@
 <template>
+  <app-sidebar-btn v-if="isMobile"/>
   <app-loading/>
   <div>
     <app-nav class="p-sticky t-0 z-9"/>
@@ -9,6 +10,16 @@
 <script setup>
 import AppNav from "@/components/appNav";
 import AppLoading from "@/components/appLoading";
+import AppSidebarBtn from "@/components/appSidebarBtn";
+import {computed, watch} from "vue";
+import {useRoute} from "vue-router/dist/vue-router";
+import {useMenuStore} from "@/store/menuStore";
+const route = useRoute()
+const store = useMenuStore()
+const isMobile = computed(()=> window.innerWidth <= 500)
+watch(() => route.path, ()=> {
+  store.isOpen = window.innerWidth > 500
+})
 </script>
 
 <style lang="scss">
@@ -69,6 +80,16 @@ aside .activeLink * {
 
   &-enter-active, &-leave-active {
     transition: 0.5s ease-in-out
+  }
+}
+@media screen and (max-width: 500px){
+  .xcol-info{
+    background-color: #00000050;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    backdrop-filter: blur(3px);
   }
 }
 </style>

@@ -7,6 +7,7 @@
 <script setup>
 import {nextTick, onMounted, defineProps, toRefs} from "vue";
 import SDGs from '../../../public/json/SDG.json'
+import countryInfo from '../../../public/json/country.json'
 
 const props = defineProps({
   dataProps: {
@@ -15,7 +16,7 @@ const props = defineProps({
     nodes: Object
   }
 })
-
+const targetsColors = countryInfo.targets.colors
 const {dataProps} = toRefs(props);
 
 const data = dataProps.value.data
@@ -23,9 +24,9 @@ const sdgId = dataProps.value.sdgId
 const nodes = [
   {id:"SDG",name:"SDG" ,color: SDGs[sdgId - 1].color ,height: 200,width: 50},
     ...dataProps.value.nodes,
-  {id:"highPerformer",name:"High Performer", color:"#46E6B3"},
-  {id:"lowPerformer",name:"Low Performer", color:"#F8778E"},
-  {id:"similar",name:"Similar", color:"#F7C25C"}
+  {id:"highPerformer",name:"High Performer", color: targetsColors.highPerformer},
+  {id:"lowPerformer",name:"Low Performer", color: targetsColors.lowPerformer},
+  {id:"similar",name:"Similar", color: targetsColors.similar}
 ]
 
 onMounted(() => {

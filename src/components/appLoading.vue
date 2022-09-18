@@ -32,10 +32,26 @@ $animationTime: 4s;
   &.activate{
     animation: pageTransition  $animationTime  forwards ease-in-out;
     .loading-logo{animation: fadeImg $animationTime forwards ease-in-out;}
-    .loading-sdgs{animation: rotate 10s linear infinite, fadeImg $animationTime forwards ease-in-out;}
+    .loading-sdgs{
+      animation: rotate 10s linear infinite,
+      fadeImg $animationTime forwards ease-in-out;
+    }
+  }
+}
+.loading-logo{
+  width: 20%;
+  @media screen and (max-width: 500px){
+    width: 40%;
+  }
+}
+.loading-sdgs{
+  width: 40%;
+  @media screen and (max-width: 500px){
+    width: 90%;
   }
 }
 @keyframes rotate {
+  from{rotate: 0deg;}
   to{rotate: 360deg;}
 }
 @keyframes fadeImg {

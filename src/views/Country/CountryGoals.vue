@@ -1,7 +1,7 @@
 <template>
 
   <div class="row rm-padding">
-    <div class="xcol-info">
+    <div class="xcol-info" v-if="menuStore.isOpen">
       <country-sidebar class="p-sticky"/>
     </div>
     <div class="xcol-body">
@@ -26,9 +26,10 @@ import GlobalCircleChart from "@/views/Global/GlobalCircleChart";
 import countryInfo from '../../../public/json/country.json'
 import SDGs from "../../../public/json/SDG.json"
 import CountrySidebar from "@/views/Country/countrySidebar";
+import {useMenuStore} from "@/store/menuStore";
 
 const {allGoals} = countryInfo
-
+const menuStore = useMenuStore()
 </script>
 
 <style scoped lang="scss">

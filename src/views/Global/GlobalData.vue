@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="xcol-info">
+    <div class="xcol-info" v-if="store.isOpen">
       <global-sidebar/>
     </div>
     <div class="xcol-body">
@@ -20,8 +20,11 @@
 import globalInfo from '../../../public/json/global.json'
 import GlobalSidebar from "@/views/Global/globalSidebar";
 import GlobeMap from "@/components/GlobeMap";
+import {useMenuStore} from "@/store/menuStore";
 
 const {data} = globalInfo
+
+const store = useMenuStore()
 </script>
 
 <style scoped lang="scss">
