@@ -2,7 +2,7 @@
   <div class="infoBox">
     <div class="row alignCenter"  @click="opened = !opened">
       <div class="numBox">{{ number }}</div>
-      <p class="infoBox-title"  v-if="opened">{{ title }}</p>
+      <p class="infoBox-title bold"  v-if="opened || openedTitle">{{ title }}</p>
     </div>
     <div class="incomeSection" v-if="opened" @click="opened=false ">
       <hr>
@@ -12,20 +12,29 @@
 </template>
 
 <script setup>
-import {defineProps, ref, toRefs} from "vue";
+import {defineProps, onMounted, ref, toRefs} from "vue";
 const props = defineProps({
   number:String,
   title: String,
   color: String
 })
-const opened = ref(false)
+let opened = ref(false)
+let openedTitle = ref(false)
 const {color,number,title} = toRefs(props)
 const colored = color.value
-
+onMounted(()=>{
+  openedTitle.value = window.innerWidth < 500
+})
 </script>
 
 <style scoped lang="scss">
-
+.bold{
+  font-weight: bold;
+  @media screen and (max-width: 500px){
+    font-size: 16px;
+    padding-right: 10px;
+  }
+}
 .numBox {
 
   width: 30px;

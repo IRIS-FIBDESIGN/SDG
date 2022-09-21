@@ -2,7 +2,7 @@
 
   <div class="row rm-padding">
     <div class="xcol-info" v-if="menuStore.isOpen">
-      <country-sidebar class="p-sticky"/>
+      <country-sidebar class="p-sticky sidebarMobileMargin"/>
     </div>
     <div class="xcol-body">
       <transition-group tag="div" name="fadeIn" class="row" appear>

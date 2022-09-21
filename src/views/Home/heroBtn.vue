@@ -27,6 +27,11 @@ export default {
   border-bottom: 3px solid #31699A;
   overflow: hidden;
 
+  @media screen and (max-width: 500px){
+    min-width: 80px;
+    border-radius: 10px;
+  }
+
   &:before{
     position: absolute;
     content: '';

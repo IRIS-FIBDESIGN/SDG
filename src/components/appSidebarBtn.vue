@@ -1,5 +1,5 @@
 <template>
-  <button class="sidebarBtn" @click="store.toggleMenu">
+  <button v-if="isNotHome" class="sidebarBtn" @click="store.toggleMenu">
     <ion-icon v-if="store.isOpen" name="arrow-back"></ion-icon>
     <ion-icon v-else name="menu"></ion-icon>
   </button>
@@ -7,7 +7,10 @@
 
 <script setup>
 import {useMenuStore} from "@/store/menuStore";
+import {computed} from "vue";
+import {useRoute} from "vue-router";
 
+const isNotHome = computed(() => useRoute().name !== 'home')
 const store = useMenuStore()
 </script>
 

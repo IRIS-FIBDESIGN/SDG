@@ -1,7 +1,7 @@
 <template>
   <div class="row rm-padding">
     <div class="xcol-info" v-if="menuStore.isOpen">
-      <country-sidebar class="p-sticky"/>
+      <country-sidebar class="p-sticky sidebarMobileMargin"/>
     </div>
     <div class="xcol-body">
       <div v-html="data" class="p-3-5"></div>

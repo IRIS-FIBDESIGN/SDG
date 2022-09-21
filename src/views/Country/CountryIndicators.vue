@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="xcol-info" v-if="menuStore.isOpen">
-      <div class="p-sticky">
+      <div class="p-sticky sidebarMobileMargin">
         <country-sidebar/>
         <transition name="fade-slide" mode="out-in" appear>
           <div class="box">

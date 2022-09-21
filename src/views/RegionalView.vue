@@ -1,46 +1,5 @@
 <template>
 
-  <regional-info-box class="africaInfoBox"
-                     :number="sub_saharan_africa.num"
-                     :title="sub_saharan_africa.label"
-                     :color="sub_saharan_africa.color">
-    <div v-for="item in sub_saharan_africa.links"
-         :key="item.id"
-         class="row alignCenter"
-         @click="!item.disabled && showTopGoals(sub_saharan_africa.id, item.id)"
-         :class="{'disabledLink':item.disabled}">
-      <p>{{ item.label }}</p>
-      <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
-    </div>
-  </regional-info-box>
-
-  <regional-info-box class="asiaInfoBox"
-                     :number="europe_and_central_asia.num"
-                     :title="europe_and_central_asia.label"
-                     :color="europe_and_central_asia.color">
-    <div v-for="item in europe_and_central_asia.links"
-         :key="item.id"
-         class="row alignCenter"
-         @click="!item.disabled && showTopGoals(europe_and_central_asia.id, item.id)"
-         :class="{'disabledLink':item.disabled}">
-      <p>{{ item.label }}</p>
-      <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
-    </div>
-  </regional-info-box>
-
-  <regional-info-box class="americaInfoBox"
-                     :number="latin_america_and_the_caribbean.num"
-                     :title="latin_america_and_the_caribbean.label"
-                     :color="latin_america_and_the_caribbean.color">
-    <div v-for="item in latin_america_and_the_caribbean.links"
-         :key="item.id"
-         class="row alignCenter"
-         @click="!item.disabled && showTopGoals(latin_america_and_the_caribbean.id, item.id)"
-         :class="{'disabledLink':item.disabled}">
-      <p>{{ item.label }}</p>
-      <ion-icon name="arrow-forward" class="ml-auto icon"></ion-icon>
-    </div>
-  </regional-info-box>
 
   <div class="infoSelect">
     <div v-if="infoSelect" class="">
@@ -51,7 +10,7 @@
       </ul>
 
       <h6>Regions</h6>
-      <ul class="rm-padding">
+      <ul class="rm-padding hiddenInMobile">
         <li v-for="region in regionalInformation.value"
             :key="region.id"
             class="row alignCenter mb-1">
@@ -80,6 +39,48 @@
       </div>
     </transition>
   </div>
+
+  <regional-info-box class="africaInfoBox"
+                     :number="sub_saharan_africa.num"
+                     :title="sub_saharan_africa.label"
+                     :color="sub_saharan_africa.color">
+    <div v-for="item in sub_saharan_africa.links"
+         :key="item.id"
+         class="row alignCenter"
+         @click="!item.disabled && showTopGoals(sub_saharan_africa.id, item.id)"
+         :class="{'disabledLink':item.disabled}">
+      <p>{{ item.label }}</p>
+      <ion-icon v-if="!item.disabled" name="arrow-forward" class="ml-auto icon"></ion-icon>
+    </div>
+  </regional-info-box>
+
+  <regional-info-box class="asiaInfoBox"
+                     :number="europe_and_central_asia.num"
+                     :title="europe_and_central_asia.label"
+                     :color="europe_and_central_asia.color">
+    <div v-for="item in europe_and_central_asia.links"
+         :key="item.id"
+         class="row alignCenter"
+         @click="!item.disabled && showTopGoals(europe_and_central_asia.id, item.id)"
+         :class="{'disabledLink':item.disabled}">
+      <p>{{ item.label }}</p>
+      <ion-icon v-if="!item.disabled" name="arrow-forward" class="ml-auto icon"></ion-icon>
+    </div>
+  </regional-info-box>
+
+  <regional-info-box class="americaInfoBox"
+                     :number="latin_america_and_the_caribbean.num"
+                     :title="latin_america_and_the_caribbean.label"
+                     :color="latin_america_and_the_caribbean.color">
+    <div v-for="item in latin_america_and_the_caribbean.links"
+         :key="item.id"
+         class="row alignCenter"
+         @click="!item.disabled && showTopGoals(latin_america_and_the_caribbean.id, item.id)"
+         :class="{'disabledLink':item.disabled}">
+      <p>{{ item.label }}</p>
+      <ion-icon v-if="!item.disabled" name="arrow-forward" class="ml-auto icon"></ion-icon>
+    </div>
+  </regional-info-box>
 
   <transition name="fade" mode="out-in">
     <div class=" w-50 topGoals" v-if="regionSelected">
@@ -1960,14 +1961,16 @@ onMounted(() => {
   const asiaInfoBox = document.getElementsByClassName('asiaInfoBox')[0]
   const americaInfoBox = document.getElementsByClassName('americaInfoBox')[0]
 
-  africaInfoBox.style.top = africaPos.getBoundingClientRect().top + 'px'
-  africaInfoBox.style.left = africaPos.getBoundingClientRect().left + 80 + 'px'
+  if(window.innerWidth > 500){
+    africaInfoBox.style.top = africaPos.getBoundingClientRect().top + 'px'
+    africaInfoBox.style.left = africaPos.getBoundingClientRect().left + 80 + 'px'
 
-  asiaInfoBox.style.top = asiaPos.getBoundingClientRect().top + 100 + 'px'
-  asiaInfoBox.style.left = asiaPos.getBoundingClientRect().left + 250 + 'px'
+    asiaInfoBox.style.top = asiaPos.getBoundingClientRect().top + 100 + 'px'
+    asiaInfoBox.style.left = asiaPos.getBoundingClientRect().left + 250 + 'px'
 
-  americaInfoBox.style.top = americaPos.getBoundingClientRect().top + 50 + 'px'
-  americaInfoBox.style.left = americaPos.getBoundingClientRect().left + 110 + 'px'
+    americaInfoBox.style.top = americaPos.getBoundingClientRect().top + 50 + 'px'
+    americaInfoBox.style.left = americaPos.getBoundingClientRect().left + 110 + 'px'
+  }
 
 
   africaInfoBox.addEventListener('mouseover', () => africaPos.classList.add('mapPart'))
@@ -1982,7 +1985,9 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-
+*{
+  font-size: 16px!important;
+}
 path {
   transition: all 0.2s ease;
 }
@@ -1991,6 +1996,13 @@ path {
   position: absolute;
   top: calc(60px + 1rem);
   left: 3rem;
+
+  @media screen and (max-width: 500px) {
+    position: relative;
+    left: unset;
+    top: unset;
+    padding: 3rem 7rem;
+  }
 }
 
 .topGoals {
@@ -2005,6 +2017,14 @@ path {
   width: 70%;
   right: -2rem;
   padding: 2rem;
+
+  @media screen and (max-width: 500px) {
+    //position: relative;
+    //right: unset;
+    //top: unset;
+    //width: 90%;
+    display: none;
+  }
 }
 
 .mapPart {
@@ -2042,6 +2062,24 @@ path {
   opacity: 0.2;
   cursor: default!important;
 }
+@media screen and (max-width: 500px){
+  .africaInfoBox,
+  .asiaInfoBox,
+  .americaInfoBox{
+    position: relative!important;
+    top: unset;
+    right: unset;
+    left: unset;
+    margin: 3rem 7rem;
 
+  }
+
+  .africaInfoBox{
+    margin-top: 0!important;
+  }
+  .w-50{
+    width: 90%;
+  }
+}
 
 </style>

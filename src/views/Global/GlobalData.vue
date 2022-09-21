@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="xcol-info" v-if="store.isOpen">
-      <global-sidebar/>
+      <global-sidebar class="sidebarMobileMargin"/>
     </div>
     <div class="xcol-body">
       <div v-html="data" class="p-3-5"></div>

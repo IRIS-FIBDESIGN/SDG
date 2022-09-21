@@ -29,12 +29,19 @@ h3{
     left: -2rem;
     transform: translateX(-100%) scale(0.9);
     content: url("@/assets/home-about-left.png");
+
+    @media screen and (max-width: 500px) {
+      transform: translateX(-70%) scale(0.3);
+    }
   }
   &:after{
     position: absolute;
     right: -2rem;
     transform: translateX(100%) scale(0.9);
     content: url("@/assets/home-about-right.png");
+    @media screen and (max-width: 500px) {
+      transform: translateX(70%) scale(0.3);
+    }
 
   }
 }
@@ -50,4 +57,13 @@ img{
 .box-2{left: 3rem;bottom: 0;;width: 250px}
 .box-3{left: 50%;top: 25%;width: 100px}
 .box-4{right: 0;top: -20%;width: 300px}
+
+
+@media screen and (max-width: 500px){
+
+  .box-1{width: 50px}
+  .box-2{width: 70px}
+  .box-3{width: 20px}
+  .box-4{width: 100px}
+}
 </style>

@@ -34,5 +34,9 @@ const {universityLink, labLink} = mainInfo
   width: 100%;
   height: 100%;
   border-radius: 0 30px 30px 0;
+
+  @media screen and (max-width: 500px){
+    border-radius: 0 0 30px 30px;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="xcol-info" v-if="menuStore.isOpen">
-      <regional-sidebar :region-title="regionTitle" :income="income" :region="region" :map="map"/>
+      <regional-sidebar :region-title="regionTitle" class="sidebarMobileMargin" :income="income" :region="region" :map="map"/>
     </div>
     <div class="xcol-body">
       <div>

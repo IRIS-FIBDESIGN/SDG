@@ -24,7 +24,11 @@ watch(() => route.path, ()=> {
 
 <style lang="scss">
 @import "fib-maxup/css/index.css";
-
+@media screen and (max-width: 500px){
+  .sidebarMobileMargin{
+    margin-left: 7rem;
+  }
+}
 :root{
 
   --primaryColor: #244868;

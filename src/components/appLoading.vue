@@ -19,6 +19,9 @@ $animationTime: 4s;
   //background-color: #000000aa;
   background-color: var(--primaryColor);
   //backdrop-filter: blur(3px);
+  &:not(.activate){
+    display: none;
+  }
   img{
     position: absolute;
     top: 50%;

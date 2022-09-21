@@ -1,18 +1,19 @@
 <template>
   <div>
     <transition name="nav" appear>
-      <transition-group tag="nav" name="nav-brand" class="navigation bg-white">
-        <router-link to="/" class="brand" v-if="!isHome">
+      <transition-group tag="nav" name="nav-brand" :class="{'navIsActive': navIsActive}" class="navigation bg-white">
+        <router-link to="/" class="brand">
           <div>
             <p>{{ title }}</p>
             <p>{{ subtitle }}</p>
           </div>
         </router-link>
+        <div class="nav-toggle" @click="navIsActive = !navIsActive"><ion-icon name="menu"></ion-icon></div>
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/global">Global</router-link></li>
-          <li><router-link to="/regional">Regional</router-link></li>
-          <li><router-link to="/country">Country</router-link></li>
+          <li class="navItems"><router-link to="/">Home</router-link></li>
+          <li class="navItems"><router-link to="/global">Global</router-link></li>
+          <li class="navItems"><router-link to="/regional">Regional</router-link></li>
+          <li class="navItems"><router-link to="/country">Country</router-link></li>
         </ul>
 
         <ul class="ml-auto">
@@ -26,14 +27,42 @@
 
 <script setup>
 import mainInfo from '../../public/json/main.json'
-import {computed, inject} from "vue";
+import {nextTick, onMounted, ref, watch} from "vue";
 import {useRoute} from "vue-router/dist/vue-router";
 const {title, subtitle, universityLink, labLink} = mainInfo
-const isMobile = inject('isMobile')
-const isHome = computed(() => useRoute().name === 'home')
+
+const navIsActive = ref(false);
+const route = useRoute()
+onMounted(()=>{
+  nextTick(()=>{
+    const navBtn = document.getElementsByClassName('nav-toggle')[0]
+    navBtn.setAttribute('data-collapse', (window.innerWidth <= 800))
+  })
+})
+
+watch(
+    () => route.path,
+    ()=> {
+      navIsActive.value = false
+    }
+)
 </script>
 
 <style scoped lang="scss">
+.navigation{
+  z-index: 10000!important;
+}
+.nav-toggle *{
+  font-size: 2rem;
+}
+@media screen and (max-width: 500px){
+  .navItems{
+    margin-bottom: 1rem;
+    *{
+      font-size: 16px;
+    }
+  }
+}
 .imageLink {
   opacity: 1 !important;
 

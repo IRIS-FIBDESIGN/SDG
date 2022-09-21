@@ -1,7 +1,7 @@
 <template>
   <!-- ============== sidebar ============== -->
   <transition name="fade" mode="out-in">
-    <div class="pl-5 mt-5">
+    <div class="pl-5 mt-5 info">
       <h4 class="primaryColor">{{ title }}</h4>
       <global-sidebar/>
       <chart-top-goals :top-goals="topGoals" class="mt-5"/>
@@ -29,6 +29,11 @@ const {title, topGoals} = globalScale
 .tab {
   width: 100%;
 }
+@media screen and (max-width: 500px){
+  .info{
+    padding: 1rem 5rem!important;
+  }
+}
 
 .xx {
   width: 600px;
@@ -36,14 +41,14 @@ const {title, topGoals} = globalScale
   margin-top: 50px;
   position: fixed;
   top: 5%;
-  right: 35%;
+  right: 33%;
   transform: translateX(50%);
   z-index: -10;
   transition: 0.5s ease;
 
-  &.goRight {
-    right: 0 !important;
-    opacity: 0.2;
+  @media screen and (max-width: 500px){
+    opacity: 0.1;
+    right: 50%;
   }
 
   &:before {

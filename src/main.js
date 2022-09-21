@@ -21,3 +21,4 @@ app.use(router)
     .use(VueApexCharts)
     .mount('#app')
 
+

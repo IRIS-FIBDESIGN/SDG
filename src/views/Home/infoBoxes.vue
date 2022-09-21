@@ -24,5 +24,17 @@ const boxes = homeInfo.info
   &:nth-child(1){margin-left: -30%;border-bottom: 3px solid #5BBDE2;}
   &:nth-child(2){margin-right: -15%;border-bottom: 3px solid #8E44AD;}
   &:nth-child(3){margin-left: -5%;border-bottom: 3px solid #E74C3C;}
+
+
+
+  @media screen and (max-width: 500px){
+    margin: 1rem 0!important;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .column-c{
+    padding: 2rem;
+  }
 }
 </style>

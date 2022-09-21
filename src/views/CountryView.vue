@@ -19,6 +19,8 @@
     </div>
     <country-sidebar v-if="selected"/>
   </div>
+
+  <button class="mobileBtn" @click="selected = true" v-if="!selected">Compare</button>
   <svg id="map" xmlns="http://www.w3.org/2000/svg" width="1310.074" height="624.171" viewBox="0 0 1310.074 624.171">
     <g transform="translate(357.062 -1331.938)">
       <g id="other">
@@ -529,6 +531,9 @@ path{
   transform: translateY(-45%);
   right: 0 ;
   z-index: -1;
+  @media screen and (max-width: 500px){
+    display: none;
+  }
 }
 .infoSelect{
   padding-top: 2rem;
@@ -585,6 +590,29 @@ path{
 
   &-enter-active, &-leave-active {
     transition: 0.5s ease-in-out
+  }
+}
+
+@media screen and (max-width: 500px){
+  .infoSelect{
+    position: relative;
+    padding-left: 5rem;
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+.mobileBtn{
+  display: none;
+  @media screen and (max-width: 500px){
+    display: block;
+    width: 70%;
+    margin: 7rem auto;
+    padding-block: 1.5rem;
+
+    background-color: darkgreen;
+    color: white;
+    border-radius: 50px!important;
   }
 }
 </style>

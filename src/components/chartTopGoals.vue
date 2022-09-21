@@ -31,6 +31,13 @@ const {topGoals} = toRefs(props)
   &-1 .chart{width:500px;}
   &-2 .chart{width:400px;}
   &-3 .chart{width:300px;}
+
+  @media screen and (max-width: 500px){
+
+    &-1 .chart{width:280px;}
+    &-2 .chart{width:250px;}
+    &-3 .chart{width:200px;}
+  }
 }
 .percentage{
   font-weight: bold;
