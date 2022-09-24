@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5 class="primaryColor">Top Synergetic Goals</h5>
+    <h5 class="primaryColor pb-1">Top Synergetic Goals</h5>
     <div v-for="(goal,index) in topGoals" :key="index" class="row alignCenter mb-1 line" :class="'chart-'+(index+1)">
       <top-chart :goal="SDGs.find(x => x.id === goal.id)" class="chart"/>
       <p class="percentage"  :style="'color:'+SDGs.find(x => x.id === goal.id).color">

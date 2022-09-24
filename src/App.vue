@@ -11,14 +11,23 @@
 import AppNav from "@/components/appNav";
 import AppLoading from "@/components/appLoading";
 import AppSidebarBtn from "@/components/appSidebarBtn";
-import {computed, watch} from "vue";
+import {computed, nextTick, onMounted, watch} from "vue";
 import {useRoute} from "vue-router/dist/vue-router";
 import {useMenuStore} from "@/store/menuStore";
 const route = useRoute()
 const store = useMenuStore()
 const isMobile = computed(()=> window.innerWidth <= 500)
+
 watch(() => route.path, ()=> {
   store.isOpen = window.innerWidth > 500
+})
+
+onMounted(()=>{
+  nextTick(()=>{
+    const pageTransition = document.getElementsByClassName('pageTransition')[0]
+    pageTransition.classList.add('activate')
+    setTimeout(()=> pageTransition.classList.remove('activate'),4010)
+  })
 })
 </script>
 
@@ -87,7 +96,7 @@ aside .activeLink * {
   }
 }
 @media screen and (max-width: 500px){
-  .xcol-info{
+  .xcol-info:not(.goalChild){
     background-color: #00000050;
     height: 100vh;
     position: fixed;

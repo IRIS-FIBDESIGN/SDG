@@ -2001,7 +2001,7 @@ path {
     position: relative;
     left: unset;
     top: unset;
-    padding: 3rem 7rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -2009,6 +2009,13 @@ path {
   position: absolute;
   bottom: 2rem;
   left: 3rem;
+  @media screen and (max-width: 500px){
+    position: relative;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    padding: 2rem;
+  }
 }
 
 .map {
@@ -2070,15 +2077,12 @@ path {
     top: unset;
     right: unset;
     left: unset;
-    margin: 3rem 7rem;
+    margin: 3rem 2rem;
 
   }
 
   .africaInfoBox{
     margin-top: 0!important;
-  }
-  .w-50{
-    width: 90%;
   }
 }
 

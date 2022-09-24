@@ -14,7 +14,7 @@ $animationTime: 4s;
   position: fixed;
   z-index: 999;
   inset-inline-start: 0;
-  inset-inline-end: 100vw;
+  inset-inline-end: 0;
   inset-block: 0;
   //background-color: #000000aa;
   background-color: var(--primaryColor);
@@ -67,7 +67,7 @@ $animationTime: 4s;
 @keyframes pageTransition {
   0% {
     inset-inline-start: 0;
-    inset-inline-end: 100vw;
+    inset-inline-end: 0;
   }
   20% {
     inset-inline-start: 0;

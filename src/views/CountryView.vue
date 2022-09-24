@@ -596,7 +596,7 @@ path{
 @media screen and (max-width: 500px){
   .infoSelect{
     position: relative;
-    padding-left: 5rem;
+    padding-left: 0;
     font-size: 16px;
     width: 90%;
   }

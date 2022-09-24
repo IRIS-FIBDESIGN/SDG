@@ -44,6 +44,9 @@ img{
 }
 
 @keyframes fillChart {
+  from{
+    inset-inline-end: 100%;
+  }
   to{
     inset-inline-end: 0;
   }

@@ -62,6 +62,9 @@ watch(
       font-size: 16px;
     }
   }
+  .brand p {
+    font-size: 8px!important;
+  }
 }
 .imageLink {
   opacity: 1 !important;

@@ -41,6 +41,9 @@ const {color, icon, percentage} = goal.value
 }
 
 @keyframes fillChart {
+  from{
+    inset-inline-end: 100%;
+  }
   to{
     inset-inline-end: 0;
   }

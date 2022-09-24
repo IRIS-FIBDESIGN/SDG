@@ -36,20 +36,33 @@
       </div>
     </div>
     <div class="xcol-body">
-      <div class="row p-3-5">
+      <div v-if="selected === 'all'" class="row p-3-5">
         <div v-for="(indicator,index) in indicators" :key="index" class="xcol-4-2">
-          <indicator-chart v-if="selected === 'all'" :data-prop="indicator.value" :sdg-id="indicator.sdgId"/>
-          <div class="goal" v-if="selected !== 'all'">
-            <global-circle-chart class="chart" v-if="selected === 'similar'" :percentage="indicator.value.similar" :color="indicator.sdgId"/>
-            <global-circle-chart class="chart" v-if="selected === 'highPerformer'" :percentage="indicator.value.highPerf" :color="indicator.sdgId"/>
-            <global-circle-chart class="chart" v-if="selected === 'lowPerformer'" :percentage="indicator.value.lowPerf" :color="indicator.sdgId"/>
-            <global-circle-chart class="chart" v-if="selected === 'cannotBeEvaluated'" :percentage="indicator.value.other" :color="indicator.sdgId"/>
-            <div class="row-c">
-              <img :src="require('@/assets/SDG-logos/'+goalStore.findGoal(indicator.sdgId).icons.colored)" class="mr-1"/>
-              <img :src="require('@/assets/SDG-logos/'+goalStore.findGoal(indicator.sdgId).icons.labeled)"/>
+          <indicator-chart  :data-prop="indicator.value" :sdg-id="indicator.sdgId"/>
+        </div>
+      </div>
+      <div v-else class="p-3-5">
+        <div v-for="(indicator,index) in indicators" :key="index" class="mb-2">
+          <div class="goal row">
+            <div class="xcol-info goalChild">
+              <global-circle-chart class="chart" v-if="selected === 'similar'" :percentage="indicator.value.similar" :color="indicator.sdgId"/>
+              <global-circle-chart class="chart" v-if="selected === 'highPerformer'" :percentage="indicator.value.highPerf" :color="indicator.sdgId"/>
+              <global-circle-chart class="chart" v-if="selected === 'lowPerformer'" :percentage="indicator.value.lowPerf" :color="indicator.sdgId"/>
+              <global-circle-chart class="chart" v-if="selected === 'cannotBeEvaluated'" :percentage="indicator.value.other" :color="indicator.sdgId"/>
+              <div class="row-c">
+                <img :src="require('@/assets/SDG-logos/'+goalStore.findGoal(indicator.sdgId).icons.colored)" class="mr-1"/>
+                <img :src="require('@/assets/SDG-logos/'+goalStore.findGoal(indicator.sdgId).icons.labeled)"/>
+              </div>
+            </div>
+            <div class="xcol-body goalChild">
+              <div v-if="selected === 'similar'" v-html="indicator.descriptions.similar"></div>
+              <div v-if="selected === 'highPerformer'" v-html="indicator.descriptions.highPerf"></div>
+              <div v-if="selected === 'lowPerformer'" v-html="indicator.descriptions.lowPerf"></div>
+              <div v-if="selected === 'cannotBeEvaluated'" v-html="indicator.descriptions.other"></div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -117,7 +130,6 @@ const goalStore = useGoalStore()
   border-radius: 50%;
   margin-right: 1rem;
 }
-
 .p-sticky {
   top: 100px;
 }

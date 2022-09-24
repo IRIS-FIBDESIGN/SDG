@@ -16,8 +16,10 @@ import HomeAbout from "@/views/Home/homeAbout";
 import HomeContact from "@/views/Home/homeContact";
 import HomeInfo from "@/views/Home/homeInfo";
 import mainInfo from '../../public/json/main.json'
+import {nextTick, onMounted} from "vue";
 const copyright = mainInfo.copyrights
 const rightsYear = new Date().getFullYear();
+
 </script>
 
 <style scoped>
