@@ -31,7 +31,7 @@ const {color, label, icons} = goal.value
     background-color: v-bind(color);
     inset-block: 0;
     inset-inline-start: 0;
-    inset-inline-end: 100%;
+    inset-inline-end: 0;
     z-index: -1;
     animation: fillChart 3s forwards ease-in-out;
     border-radius: 0 50px 50px 0;

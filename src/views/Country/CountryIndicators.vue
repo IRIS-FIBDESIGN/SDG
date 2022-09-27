@@ -6,28 +6,28 @@
         <country-sidebar/>
         <transition name="fade-slide" mode="out-in" appear>
           <div class="box">
-            <h6 class="primaryColor legend" @click="selected = 'all'">legend</h6>
+            <h6 class="primaryColor legend" @click="changeChart('all')">legend</h6>
             <div class="row alignCenter pointer mt-1"
                  :class="{'active': ['all','similar'].includes(selected)}"
-                 @click="selected = 'similar'">
+                 @click="changeChart('similar')">
               <div class="color" :style="'background:' + indicatorsColors.similar"></div>
               <p>Similar</p>
             </div>
             <div class="row alignCenter pointer"
                  :class="{'active': ['all','highPerformer'].includes(selected)}"
-                 @click="selected = 'highPerformer'">
+                 @click="changeChart('highPerformer')">
               <div class="color" :style="'background:' + indicatorsColors.highPerformer"></div>
               <p>High Performer</p>
             </div>
             <div class="row alignCenter pointer"
                  :class="{'active': ['all','lowPerformer'].includes(selected)}"
-                 @click="selected = 'lowPerformer'">
+                 @click="changeChart('lowPerformer')">
               <div class="color" :style="'background:' + indicatorsColors.lowPerformer"></div>
               <p>Low Performer</p>
             </div>
             <div class="row alignCenter pointer"
                  :class="{'active': ['all','cannotBeEvaluated'].includes(selected)}"
-                 @click="selected = 'cannotBeEvaluated'">
+                 @click="changeChart('cannotBeEvaluated')">
               <div class="color" :style="'background:' + indicatorsColors.cannotBeEvaluated"></div>
               <p>Cannot be evaluated</p>
             </div>
@@ -84,6 +84,13 @@ const selected = ref('all')
 const {indicatorsColors} = countryInfo
 const menuStore = useMenuStore()
 const goalStore = useGoalStore()
+
+const changeChart = (val) => {
+  selected.value = val
+  if(window.innerWidth < 500){
+    menuStore.toggleMenu()
+  }
+}
 </script>
 
 <style scoped lang="scss">
