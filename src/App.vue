@@ -18,9 +18,7 @@ const route = useRoute()
 const store = useMenuStore()
 const isMobile = computed(()=> window.innerWidth <= 500)
 
-watch(() => route.path, ()=> {
-  store.isOpen = window.innerWidth > 500
-})
+watch(() => route.path, ()=> store.isOpen = window.innerWidth > 500)
 
 onMounted(()=>{
   nextTick(()=>{

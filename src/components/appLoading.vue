@@ -1,7 +1,9 @@
 <template>
-  <div class="pageTransition">
-    <img src="@/assets/loading-logo.svg" alt="logo" class="loading-logo">
-    <img src="@/assets/loading-sdgs.svg" alt="logo" class="loading-sdgs">
+  <div class="pageTransition row-c">
+    <div class="con">
+      <img src="@/assets/loading-logo.svg" alt="logo" class="loading-logo">
+      <img src="@/assets/loading-sdgs.svg" alt="logo" class="loading-sdgs">
+    </div>
   </div>
 </template>
 
@@ -22,6 +24,20 @@ $animationTime: 4s;
   &:not(.activate){
     display: none;
   }
+  .con{
+    width: 40%;
+    aspect-ratio: 1;
+    position: relative;
+    @media screen and (max-width: 500px){
+      width: 90%;
+    }
+  }
+  .loading-logo{
+    width: 50%;
+  }
+  .loading-sdgs{
+    width: 100%;
+  }
   img{
     position: absolute;
     top: 50%;
@@ -41,18 +57,7 @@ $animationTime: 4s;
     }
   }
 }
-.loading-logo{
-  width: 20%;
-  @media screen and (max-width: 500px){
-    width: 40%;
-  }
-}
-.loading-sdgs{
-  width: 40%;
-  @media screen and (max-width: 500px){
-    width: 90%;
-  }
-}
+
 @keyframes rotate {
   from{rotate: 0deg;}
   to{rotate: 360deg;}
