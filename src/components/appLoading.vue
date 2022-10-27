@@ -26,7 +26,7 @@ $animationTime: 4s;
   }
   .con{
     width: 40%;
-    aspect-ratio: 1;
+    height: 90vh;
     position: relative;
     @media screen and (max-width: 500px){
       width: 90%;
